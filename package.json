@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "fs": "^0.0.1-security",
     "ollama": "^0.5.11"
   },
   "name": "opentalkjs",
@@ -11,5 +12,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {}
 }
