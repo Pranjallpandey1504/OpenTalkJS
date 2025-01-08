@@ -17,23 +17,29 @@
 
 //stage 2 
 
-import ollama from "ollama";
-import fs from "fs";
+import ollama from "ollama"
+import fs from "fs"
 
-let q= fs.readFileSync("./q.txt", "utf-8");
-console.log(q)
+const model = "llama3.2:3b"
 
-askQuestion()
-async function askQuestion() {
-  try {
-    const response = await ollama.chat({
-      model: "llama3.2:3b",
-      messages: [{ role: 'user', content: q }]
-    });
+fs.readFile("./q.txt", "utf-8", (err, question) => {
+  
+  if (err) return console.error("Error reading file:", err.message)
 
-    fs.writeFileSync("./a.txt", response.message.content);
+  ollama.chat({
+    model: model,
+    messages: [{ role: 'user', content: question }]
+  })
 
-  } catch (error) {
-    console.error("Error occurred:", error.message);
-  }
-}
+  .then(response => fs.writeFile("./a.txt", response.message.content, (err) => {
+
+    if (err) console.error("Error writing file:", err.message)
+    else console.log("Response saved to a.txt")
+
+  }))
+
+  .catch(error => console.error("Error occurred:", error.message))
+})
+
+
+
