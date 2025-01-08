@@ -1,5 +1,15 @@
 {
   "dependencies": {
     "ollama": "^0.5.11"
-  }
+  },
+  "name": "opentalkjs",
+  "version": "1.0.0",
+  "description": "1. Open your terminal or command prompt 🖥\r 2. Clone the repository using the following command 🔗\r    bash\r    git clone https://github.com/Pranjallpandey1504/OpenTalkJS.git",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
