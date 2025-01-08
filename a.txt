@@ -1,0 +1,37 @@
+Client-Server Architecture is a design pattern used in computer networks to distribute resources and tasks between two main types of systems:
+
+1. **Client**: A device that requests or provides services, such as a user's computer, mobile device, or web browser.
+2. **Server**: A device that provides services, data, or processing power to clients, such as a web server, database server, or file server.
+
+In a client-server architecture:
+
+* The client initiates the request for service, data, or resources.
+* The server receives and processes the request.
+* The server then sends the requested information back to the client.
+
+The key characteristics of client-server architecture are:
+
+1. **Decoupling**: Clients and servers operate independently, with minimal dependencies on each other.
+2. **Asynchronous communication**: Clients and servers communicate asynchronously, meaning that the client may not wait for a response before continuing its task.
+3. **Resource sharing**: Servers provide resources to multiple clients simultaneously.
+
+Types of Client-Server Architectures:
+
+1. **Stateless Client-Server Architecture**: The server does not store any information about the client or their session state.
+2. **Stateful Client-Server Architecture**: The server stores information about the client and their session state.
+
+Benefits of Client-Server Architecture:
+
+1. **Scalability**: Clients can be added or removed as needed, without affecting the server's performance.
+2. **Flexibility**: Clients and servers can be deployed on different devices and platforms.
+3. **Fault tolerance**: If one server fails, clients can connect to another server.
+
+Common applications of Client-Server Architecture include:
+
+1. Web browsing (e.g., HTTP/HTTPS)
+2. Email services
+3. Online banking and financial transactions
+4. E-commerce platforms
+5. Social media and online communities
+
+In summary, client-server architecture is a design pattern that allows for efficient distribution of resources and tasks between devices, enabling scalability, flexibility, and fault tolerance in various applications.
