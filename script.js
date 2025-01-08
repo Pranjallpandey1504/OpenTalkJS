@@ -1,3 +1,4 @@
+//stage 1
 // import ollama from "ollama";
 
 // async function runChat() {
